@@ -1,0 +1,125 @@
+:root{
+  --bg: #fcfcfc;
+  --bg-dark: #333333;
+  --bg-panel: #ebebeb;
+  --bg-panel-dark: #434343;
+  --color-headings: #0077ff;
+  --color-headings-dark: #3664FF;
+  --color-text: #333333;
+  --color-text-dark: #B5B5B5;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+
+  padding: 5% 5%;
+  background-color: var(--bg-dark);
+
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  color: var(--color-text-dark);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+header{
+  margin-bottom: 5%;
+  min-width: 300px;
+  color: var(--color-headings-dark);
+  text-align: center;
+}
+
+main{
+  height: auto;
+  min-width: 300px;
+  padding: 25px;
+
+  background-color: var(--bg-panel-dark);
+  border-radius: 25px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+form{
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-direction: column;
+
+  width: 300px;
+}
+
+fieldset{
+  border: none;
+  display: flex;
+}
+
+input, select{
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  text-align: center;
+  padding: 5px 5px 2px 5px;
+  border-radius: 5px;
+  border: none;
+  border-bottom: 3px solid transparent;
+  font-size: 18px;
+}
+
+input:focus, select:focus{
+  border-radius: 5px;
+  border-bottom: 3px solid var(--color-headings-dark);
+  outline: none;
+}
+
+input[type=submit]{
+  background-color: var(--color-headings-dark);
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#tip{
+  height: 50px;
+  max-width: 300px;
+  margin-top: 5px;
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#tip span{
+  font-size: 28px;
+  font-weight: bold;
+}
+
+footer{
+  max-width: 300px;
+  margin-top: 5%;
+  text-align: center;
+}
+
+a{
+  text-decoration: none;
+  color: var(--color-headings-dark)
+}
+a:hover{
+  color: var(--color-headings);
+}

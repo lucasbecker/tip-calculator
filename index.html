@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="description" content="Uma simples calculadora de gorjeta online.">
+  <meta name="keywords" content="calculado de gorjeta online, calculadora de gorjeta, calculadora, gorjeta, gorjetas, online">
+  <meta name="author" content="Lucas Becker Felisberto">
+  <title>Calculadora de Gorjeta</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Calculadora de Gorjeta</h1>
+  </header>
+  <main>
+    <form>
+      <fieldset>
+        <label for="bill"> Valor da conta em R$:</label>
+        <input type="number" name="bill" id="bill" placeholder="86,50" min="0" step="0.01" required>
+      </fieldset>
+      <fieldset>
+        <label for="service-quality">Como foi o atendimento?</label>
+        <select name="service-quality" id="service-quality" required>
+          <option value="0.25">Incrível</option>
+          <option value="0.20">Ótimo</option>
+          <option value="0.15" selected>Bom</option>
+          <option value="0.10">Aceitável</option>
+          <option value="0.05">Ruim</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <label for="clients-number">Quantas pessoas vão pagar?</label>
+        <input type="number" name="clients-number" id="clients-number" placeholder="1" min="1" value="1" required>
+      </fieldset>
+      <input type="submit" value="Calcular">
+    </form>
+    <div id="tip"></div>
+  </main>
+  <footer>
+    <p>
+      &copy; 2020 Todos os direitos reservados.<br/>
+      Desenvolvido por <a href="https://lucasbecker.github.io" target="_blank">Lucas Becker</a>.
+    </p>
+  </footer>
+  
+  <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
